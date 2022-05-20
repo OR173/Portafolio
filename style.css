@@ -9,27 +9,29 @@ body{
     background-color: #F4F4F2;
 }
 
-nav{
+header .flex_nav{
     position: fixed;
-    top:0;
-    left: 0;
     width: 100vw;
-    height: 90px;
-    padding: 15px;
-    box-sizing: border-box;
-    border-bottom: 1px solid #4954648a;
+    align-items: center;
+     /* background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ); */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; 
 }
 
-nav .logo{
-    padding: 0px 5px;
-    height: 80px;
-    float: left;
+.box_logo{
+    padding: 20px;
     font-size: 24px;
     font-weight: bold;
     color: #fff;
     letter-spacing: 3px;
     font-family: 'Odibee Sans', cursive;
     font-size: 30px;
+    flex-basis: 20%;
 }
 
 /* .circulo {
@@ -41,21 +43,40 @@ nav .logo{
     margin: 0;
     justify-content: center;
 } */
-
-.texto {
-    margin-left: 10px;
-    float: right;
+.btn_menu{
+    color:white;
 }
 
-nav ul{
-    list-style: none;
-    float: right;
+.box_menu{
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 30px;
+    flex-basis: 80%;
+}
+
+.box_menu div:first-child{
     margin: 0;
     padding: 0;
-    display: flex;
+    display:flex;
 }
 
-nav ul li a{
+.box_menu div div:first-child{
+    background-color: red;
+    flex-grow: 2;
+}
+.box_menu div div:nth-child(2){
+    background-color: green;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.box_menu  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.box_menu ul li a{
     line-height: 80px;
     color: #fff;
     padding: 12px 30px;
@@ -65,13 +86,27 @@ nav ul li a{
     text-transform: uppercase;
 }
 
-nav ul li a:hover{
+/* 
+
+header ul li a{
+    display: none; 
+    
+}
+
+header ul li a:hover{
     background: #495464;
     border-radius: 6px;
 }
 
+header div:hover {
+    background-color: blue;
+    
+   
+}    */
+
 
 section .box1 {
+    
     width: 100vw;
     height: 100vh;
     background-image: linear-gradient(
@@ -83,4 +118,10 @@ section .box1 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+}
+
+section .box2{
+
+    background-color: blue;
+    height: 200px;
 }
