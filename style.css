@@ -1,82 +1,53 @@
-/* @import url("grid.css"); */
-/* https://colorhunt.co/palette/f4f4f2e8e8e8bbbfca495464 */
-/* @import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Odibee+Sans&display=swap');
+/* COLOR: 1  #faf9f9 2  #ADD2C9 3  #5EA3A3 4  #488B8F */
 
-body{
+* {
     margin: 0;
     padding: 0;
-    background-color: #F4F4F2;
 }
 
-header .flex_nav{
-    position: fixed;
-    width: 100vw;
-    align-items: center;
-     /* background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    ); */
+body {
+    background-color: #faf9f9;
+}
+
+.base {
+    background-color: #ADD2C9;
+    margin: 10px;
+    height: 100vh;
+    border-radius: 10px;
+    box-shadow: inset 0 -3em 3em rgb(0 0 0 / 10%), 0 0 0 2px rgb(173 210 201), 0.3em 0.3em 1em rgb(0 0 0 / 30%);
+}
+
+.nav {
+    position: relative;
+    width: 100%;
+    background-color: #5EA3A3;
+    height: 100px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap; 
 }
 
-.box_logo{
-    padding: 20px;
-    font-size: 24px;
-    font-weight: bold;
-    color: #fff;
-    letter-spacing: 3px;
-    font-family: 'Odibee Sans', cursive;
-    font-size: 30px;
+.logo{
     flex-basis: 20%;
 }
 
-/* .circulo {
-    float: left;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: #5cb85c;
-    margin: 0;
-    justify-content: center;
-} */
-.btn_menu{
-    color:white;
-}
-
-.box_menu{
-    text-align: center;
-    padding: 15px 20px;
-    font-size: 30px;
+.menu{
     flex-basis: 80%;
 }
 
-.box_menu div:first-child{
-    margin: 0;
-    padding: 0;
-    display:flex;
-}
-
-.box_menu div div:first-child{
-    background-color: red;
-    flex-grow: 2;
-}
-.box_menu div div:nth-child(2){
-    background-color: green;
-    flex-grow: 1;
-    justify-content: center;
-}
-
-.box_menu  ul {
+.menu ul{
     list-style: none;
-    margin: 0;
-    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.box_menu ul li a{
+.menu ul li a {
+    
     line-height: 80px;
     color: #fff;
     padding: 12px 30px;
@@ -86,42 +57,17 @@ header .flex_nav{
     text-transform: uppercase;
 }
 
-/* 
 
-header ul li a{
-    display: none; 
-    
+
+
+
+
+
+
+
+
+section{
+    background-color: #488B8F;
+    margin: 30px 0px;
 }
 
-header ul li a:hover{
-    background: #495464;
-    border-radius: 6px;
-}
-
-header div:hover {
-    background-color: blue;
-    
-   
-}    */
-
-
-section .box1 {
-    
-    width: 100vw;
-    height: 100vh;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("img/hero.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-}
-
-section .box2{
-
-    background-color: blue;
-    height: 200px;
-}
