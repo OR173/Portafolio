@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap");
+@font-face {
+  font-family: Sharp Sans;
+  src: url("font/Sharp_Sans/Sharp_Sans.otf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,30 +17,91 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  width: 1120px;
 }
 
-nav {
-  background-color: #17494d;
-  height: 100px;
-  padding: 0px 16px;
-  margin: 0px 130px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100vw;
+nav .logo-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 230px;
+}
+
+nav .nav-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 7;
+      -ms-flex-positive: 7;
+          flex-grow: 7;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li a {
+  margin: 25px;
+  padding: 15px 40px;
+  text-decoration: none;
+  font-family: 'Sharp Sans','Arial','sans-serif';
+  font-size: 12px;
+  font-weight: 600;
+  color: #17494d;
+}
+
+nav ul li a:hover {
+  background-color: #06615a;
+  color: #fff;
 }
 
 .logo {
-  padding-top: 30px;
+  font-family: 'Comforter Brush', cursive;
+  font-size: 40px;
+  font-weight: bold;
+  color: #17494d;
 }
 
 p {
   font-family: 'Bebas Neue', cursive;
-  color: white;
+  color: #17494d;
   font-size: 30px;
+}
+
+.container {
+  height: 200px;
 }
 /*# sourceMappingURL=style.css.map */

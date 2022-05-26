@@ -1,37 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+@font-face {
+    font-family: Sharp Sans;
+    src: url('font/Sharp_Sans/Sharp_Sans.otf');
+}
 
 $color_primario: #d6eef1;
 $color_secundario: #17494d;
+$color_3: #06615a;
+$color_letra: #17494d;
 
 *{
     margin: 0;
     padding: 0;
 }
 
+// .box{
+//     border-width: 0.1px; 
+//     border-style: dashed; 
+//     border-color: #dd6e81;
+
+// }
+
 body{
     background-color: $color_primario;
 }
 
-header{
+ header{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+nav {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    height: 100px;
+    width: 1120px;
+
+    .logo-items {
+        display: flex;
+        flex-grow: 1;
+        width: 230px;
+    }
+
+    .nav-items {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 7;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ul {
+        list-style: none;
+
+        li a{
+            margin: 25px;
+            padding: 15px 40px;
+            text-decoration: none;
+            font-family: 'Sharp Sans','Arial','sans-serif';
+            font-size: 12px;
+            font-weight: 600;
+            color: $color_letra;
+
+            &:hover{
+                background-color: $color_3;
+                // border: 2px solid $color_3;
+                color: #fff;
+            }
+        }
+
+
+    }
+
 }
 
-nav{
-   background-color: $color_secundario; 
-   height: 100px; 
-   padding: 0px 16px;
-   margin: 0px 130px;
-   justify-content: center;
-   width: 100vw;
-   
-}
+.logo {
+    font-family: 'Comforter Brush', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    color: $color_letra;
 
-.logo{
-    padding-top: 30px;
 }
 
 p {
     font-family: 'Bebas Neue', cursive;
-    color: white;
+    color: $color_letra;
     font-size: 30px;
+}
+
+.container{
+    height: 200px;
 }
