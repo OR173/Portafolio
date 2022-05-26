@@ -95,13 +95,30 @@ nav ul li a:hover {
   color: #17494d;
 }
 
-p {
-  font-family: 'Bebas Neue', cursive;
-  color: #17494d;
-  font-size: 30px;
+.cont_principal {
+  width: 100vw;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.container {
-  height: 200px;
+.cont_principal .principal_1 {
+  width: 50vw;
+  height: 300px;
+}
+
+.cont_principal .principal_1 img {
+  width: 400px;
+  height: 400px;
+}
+
+.cont_principal .principal_2 {
+  width: 50vw;
+  height: 300px;
 }
 /*# sourceMappingURL=style.css.map */
