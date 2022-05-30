@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+@import "funciones.scss";
 @font-face {
     font-family: Sharp Sans;
     src: url('font/Sharp_Sans/Sharp_Sans.otf');
@@ -6,7 +7,7 @@
 
 ::-webkit-scrollbar {
     width: 0px;
-  }
+}
 
 $color_primario: #d6eef1;
 $color_secundario: #17494d;
@@ -14,11 +15,14 @@ $color_3: #06615a;
 $color_letra: #17494d;
 $font_letra: 'Sharp Sans', 'Arial', 'sans-serif';
 
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
-    
+    border-width: 0.1px;
+    border-style: dashed;
+    border-color: #dd6e81;
+
 }
 
 // .box{
@@ -28,32 +32,31 @@ $font_letra: 'Sharp Sans', 'Arial', 'sans-serif';
 
 // }
 
-body{
+body {
     background-color: $color_primario;
+    margin: 0px 120px;
 }
 
- header{
+header {
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }
 
 nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 100px;
-    width: 1120px;
+    @include flex;
+    align-items: center;    
+    @include tamano_contenedorhw(100px, 1120px);
 
     .logo-items {
-        display: flex;
+        @include flex;
         flex-grow: 1;
         width: 230px;
     }
 
     .nav-items {
-        display: flex;
-        flex-direction: row;
+        
+        @include flex;
         flex-grow: 7;
         justify-content: space-between;
         align-items: center;
@@ -87,102 +90,96 @@ nav {
 
 }
 
+.contenedores {
+    @include tamano_contenedorhw(50px, 400px);
+    @include flex;
+}
+
 .cont_principal {
-    
-    width: 100vw;
-    height: 400px;
-    display: flex;
-    flex-direction: row;
+
+    @include tamano_contenedorhw(400px, auto);
+    @include flex;
     margin-bottom: 30px;
 
     .principal_1 {
-        
-        width: 50vw;
-        height: 400px;
-        display: flex;
+
         justify-content: center;
 
-        img{
-            width: 400px;
-            height: 400px;
+        img {
+            @include tamano_contenedorhw(400px, 400px);
         }
-        
+
     }
 
-    .principal_2 {
-        
-        width: 50vw;
-        height: 400px;
-        display: flex;
-        
+    .pricp_2 {
+        width: 40vw;
 
-        .pricp_2{
-            width: 40vw;
-            
-            p, h1{
-                font-family: $font_letra;
-            }
-
-            .social_media{
-                ul{
-                    display: flex;
-                    flex-direction: row;
-                }
-
-                a{
-                    cursor: pointer;
-                    text-decoration: underline;
-
-                    &:hover {
-                        background-color: $color_3;
-                
-                    }
-                }
-                
-            }
+        p,
+        h1 {
+            font-family: $font_letra;
         }
 
-        h1{
-            color: $color_letra;
-            display: block;
-            font-size: 2em;
-            margin-block-start: 0.67em;
-            margin-block-end: 0.67em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            font-weight: bold;
-        }
+        .social_media {
+            ul {
+                @include flex;
+            }
 
-        p{
-            display: block;
-            text-align: justify;
-            color:$color_letra;
-            margin-block-start: 1em;
-            margin-block-end: 1em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px; 
+            a {
+                cursor: pointer;
+                text-decoration: underline;
+
+                &:hover {
+                    background-color: $color_3;
+
+                }
+            }
+
         }
     }
-}
-.facebook {
-    background-color: #3b5998;
+
+    h1 {
+        color: $color_letra;
+        display: block;
+        font-size: 2em;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    }
+
+    p {
+        display: block;
+        text-align: justify;
+        color: $color_letra;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
 }
 
-.linkedin {
-    background-color: #0e76a8;
-}
+$color_redes: #3b5998,#0e76a8,#333,#ea4335;
+$nombre_redes: facebook,linkedin,github,google;
 
-.github {
-    background-color: #333;
-}
+//@each  for
 
-.gitlab{
-    background-color: #fca326;
-}
+// .facebook {
+//     background-color: #3b5998;
+// }
 
-.google{
-    background-color: #ea4335;
-}
+// .linkedin {
+//     background-color: #0e76a8;
+// }
+
+// .github {
+//     background-color: #333;
+// }
+
+// .google {
+//     background-color: #ea4335;
+// }
 
 .icon-button {
     margin-bottom: 10px;
@@ -205,16 +202,16 @@ nav {
     transition: 0.2s ease-in;
 }
 
-.btns_pricp{
+.btns_pricp {
     display: flex;
 }
 
-.main_btn{
+.main_btn {
     font-family: $font_letra;
     background-color: $color_secundario;
     border: 1px solid $color_secundario;
     color: #fff;
-    font-weight: 700;  
+    font-weight: 700;
     padding: 13px 22px;
     margin-right: 50px;
     text-transform: uppercase;
@@ -226,33 +223,56 @@ nav {
     font-size: 1rem;
     cursor: pointer;
 
-    &:hover{
+    &:hover {
         background-color: $color_3;
     }
 }
 
 .cont_secundario {
-    background-color:#43b7af;
-    width: 100vw;
+
+    width: auto;
     height: 400px;
     display: flex;
     flex-direction: row;
 }
 
-.triangulo-equilatero-bottom-left {
-    width: 0;
-    height: 0;
-    border-right: 683px solid transparent;
-    border-top: 200px solid  transparent;
-    border-left: 683px solid #00998e;
-    border-bottom: 200px solid #00998e;
-}
+// .triangulo-equilatero-bottom-left {
+//     width: 0; background-color:#43b7af;
+//     height: 0;
+//     border-right: 444px solid transparent;
+//     border-top: 200px solid  transparent;
+//     border-left: 683px solid #00998e;
+//     border-bottom: 200px solid #00998e;
+// }
 
 .cont_terceario {
-    background-color:$color_primario;
+    background-color: $color_primario;
     width: 100vw;
     height: 400px;
     display: flex;
     flex-direction: row;
+
+}
+
+.software-skill {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    list-style: none;
+    font-size: 3rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    align-items: center;
+
+    .software-skill-inline {
+        display: inline-block;
+        margin-right: 20px;
+        margin-bottom: 20px;
+
+        i,
+        p {
+            color: $color_secundario;
+        }
+    }
 
 }

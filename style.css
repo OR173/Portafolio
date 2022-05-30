@@ -12,10 +12,14 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  border-width: 0.1px;
+  border-style: dashed;
+  border-color: #dd6e81;
 }
 
 body {
   background-color: #d6eef1;
+  margin: 0px 120px;
 }
 
 header {
@@ -49,6 +53,10 @@ nav .logo-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -96,9 +104,21 @@ nav ul li a:hover {
   color: #17494d;
 }
 
+.contenedores {
+  height: 50px;
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .cont_principal {
-  width: 100vw;
   height: 400px;
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,38 +130,26 @@ nav ul li a:hover {
 }
 
 .cont_principal .principal_1 {
-  width: 50vw;
-  height: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 .cont_principal .principal_1 img {
+  height: 400px;
   width: 400px;
-  height: 400px;
 }
 
-.cont_principal .principal_2 {
-  width: 50vw;
-  height: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.cont_principal .principal_2 .pricp_2 {
+.cont_principal .pricp_2 {
   width: 40vw;
 }
 
-.cont_principal .principal_2 .pricp_2 p, .cont_principal .principal_2 .pricp_2 h1 {
+.cont_principal .pricp_2 p,
+.cont_principal .pricp_2 h1 {
   font-family: "Sharp Sans", "Arial", "sans-serif";
 }
 
-.cont_principal .principal_2 .pricp_2 .social_media ul {
+.cont_principal .pricp_2 .social_media ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,16 +159,16 @@ nav ul li a:hover {
           flex-direction: row;
 }
 
-.cont_principal .principal_2 .pricp_2 .social_media a {
+.cont_principal .pricp_2 .social_media a {
   cursor: pointer;
   text-decoration: underline;
 }
 
-.cont_principal .principal_2 .pricp_2 .social_media a:hover {
+.cont_principal .pricp_2 .social_media a:hover {
   background-color: #06615a;
 }
 
-.cont_principal .principal_2 h1 {
+.cont_principal h1 {
   color: #17494d;
   display: block;
   font-size: 2em;
@@ -175,7 +183,7 @@ nav ul li a:hover {
   font-weight: bold;
 }
 
-.cont_principal .principal_2 p {
+.cont_principal p {
   display: block;
   text-align: justify;
   color: #17494d;
@@ -187,26 +195,6 @@ nav ul li a:hover {
           margin-inline-start: 0px;
   -webkit-margin-end: 0px;
           margin-inline-end: 0px;
-}
-
-.facebook {
-  background-color: #3b5998;
-}
-
-.linkedin {
-  background-color: #0e76a8;
-}
-
-.github {
-  background-color: #333;
-}
-
-.gitlab {
-  background-color: #fca326;
-}
-
-.google {
-  background-color: #ea4335;
 }
 
 .icon-button {
@@ -260,8 +248,7 @@ nav ul li a:hover {
 }
 
 .cont_secundario {
-  background-color: #43b7af;
-  width: 100vw;
+  width: auto;
   height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -270,15 +257,6 @@ nav ul li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-}
-
-.triangulo-equilatero-bottom-left {
-  width: 0;
-  height: 0;
-  border-right: 683px solid transparent;
-  border-top: 200px solid  transparent;
-  border-left: 683px solid #00998e;
-  border-bottom: 200px solid #00998e;
 }
 
 .cont_terceario {
@@ -292,5 +270,34 @@ nav ul li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+.software-skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-left: 0;
+  list-style: none;
+  font-size: 3rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.software-skill .software-skill-inline {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.software-skill .software-skill-inline i,
+.software-skill .software-skill-inline p {
+  color: #17494d;
 }
 /*# sourceMappingURL=style.css.map */

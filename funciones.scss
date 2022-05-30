@@ -1,0 +1,9 @@
+@mixin tamano_contenedorhw($a,$b) {
+    height: $a;
+    width: $b;
+}
+
+@mixin flex {
+    display: flex;
+    flex-direction: row;
+}
