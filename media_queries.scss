@@ -1,0 +1,19 @@
+@media only screen and (max-width: 768px) {
+    
+    nav{
+        .fa-bars{
+            display: inline-block;
+        }
+        .nav-items{
+            display: none;
+        }
+    }
+
+
+  }
+
+
+// 576px para teléfonos móviles
+// 768px para las tabletas
+// 992px para portátiles
+// 1200px para los grandes dispositivos

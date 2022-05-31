@@ -34,19 +34,30 @@ $font_letra: 'Sharp Sans', 'Arial', 'sans-serif';
 
 body {
     background-color: $color_primario;
-    margin: 0px 120px;
+    // width:95%;  
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
     display: flex;
     align-items: center;
     justify-content: center;
+    
+}
+
+.box_general{
+    width: 1120px;
+    text-align: center;
 }
 
 nav {
     @include flex;
-    align-items: center;    
-    @include tamano_contenedorhw(100px, 1120px);
+    align-items: center;
+    height: 100px;    
+    
 
     .logo-items {
         @include flex;
@@ -80,7 +91,13 @@ nav {
         }
     }
 
+    .fa-bars{
+        display: none;
+    }
+
 }
+
+
 
 .logo {
     font-family: 'Comforter Brush', cursive;
@@ -160,26 +177,12 @@ nav {
 
 }
 
-$color_redes: #3b5998,#0e76a8,#333,#ea4335;
-$nombre_redes: facebook,linkedin,github,google;
-
-//@each  for
-
-// .facebook {
-//     background-color: #3b5998;
-// }
-
-// .linkedin {
-//     background-color: #0e76a8;
-// }
-
-// .github {
-//     background-color: #333;
-// }
-
-// .google {
-//     background-color: #ea4335;
-// }
+$joinNombre_color: (facebook, #3b5998), (linkedin, #0e76a8), (github, #333), (google, #ea4335);
+@each $id, $color in $joinNombre_color {
+    .#{$id} {
+        background-color: #{$color};
+    }
+}
 
 .icon-button {
     margin-bottom: 10px;
@@ -230,7 +233,7 @@ $nombre_redes: facebook,linkedin,github,google;
 
 .cont_secundario {
 
-    width: auto;
+    // width: auto;
     height: 400px;
     display: flex;
     flex-direction: row;
@@ -247,7 +250,7 @@ $nombre_redes: facebook,linkedin,github,google;
 
 .cont_terceario {
     background-color: $color_primario;
-    width: 100vw;
+    // width: 100vw;
     height: 400px;
     display: flex;
     flex-direction: row;
@@ -276,3 +279,6 @@ $nombre_redes: facebook,linkedin,github,google;
     }
 
 }
+
+@import "media_queries.scss";
+
