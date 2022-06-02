@@ -1,19 +1,90 @@
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
     
-    nav{
-        .fa-bars{
-            display: inline-block;
+    // nav{
+    //     .fa-bars{
+    //         display: inline-block;
+    //     }
+    //     .nav-items{
+    //         display: none;
+    //     }
+    // }
+
+    nav {
+        background-color: red;
+        height: 70px; 
+        
+        
+    
+        .logo-items {
+            @include flex;
+            flex-grow: 1;
+            width: 230px;
         }
-        .nav-items{
+    
+        .nav-items {
+            
+            @include flex;
+            flex-grow: 7;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        ul {
+    
+            li a {
+                margin: 25px;
+                padding: 15px 40px;
+                text-decoration: none;
+                font-family: $font_letra;
+                font-size: 12px;
+                font-weight: 600;
+                color: $color_letra;
+    
+                &:hover {
+                    background-color: $color_3;
+                    color: #fff;
+                }
+            }
+        }
+    
+        .fa-bars{
+            color: #fff;
+            background:none;
+            border: none;
+            font-size: 30px;
+            padding: 0 20px;
             display: none;
+        }
+    
+        .logo {
+            font-family: 'Comforter Brush', cursive;
+            font-size: 40px;
+            font-weight: bold;
+            color: $color_letra;
+        
         }
     }
 
 
-  }
+}
 
 
 // 576px para teléfonos móviles
 // 768px para las tabletas
 // 992px para portátiles
 // 1200px para los grandes dispositivos
+
+// // Small devices (landscape phones, 576px and up)
+// @media (max-width: 576px) { ... }
+
+// // Medium devices (tablets, 768px and up)
+// @media (max-width: 768px) { ... }
+
+// // Large devices (desktops, 992px and up)
+// @media (max-width: 992px) { ... }
+
+// // X-Large devices (large desktops, 1200px and up)
+// @media (max-width: 1200px) { ... }
+
+// // XX-Large devices (larger desktops, 1400px and up)
+// @media (max-width: 1400px) { ... }

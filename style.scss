@@ -18,10 +18,10 @@ $font_letra: 'Sharp Sans', 'Arial', 'sans-serif';
 * {
     margin: 0;
     padding: 0;
-    list-style: none;
-    border-width: 0.1px;
-    border-style: dashed;
-    border-color: #dd6e81;
+    box-sizing: border-box;
+    // border-width: 0.1px;
+    // border-style: dashed;
+    // border-color: #dd6e81;
 
 }
 
@@ -34,8 +34,6 @@ $font_letra: 'Sharp Sans', 'Arial', 'sans-serif';
 
 body {
     background-color: $color_primario;
-    // width:95%;  
-    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,39 +43,44 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
 
 .box_general{
-    width: 1120px;
+    width: 992px;
     text-align: center;
 }
 
 nav {
     @include flex;
     align-items: center;
-    height: 100px;    
+    height: 180px; 
+    max-width: 992px;
+    position: fixed;   
+    padding-top: 120px;
+    background-color: $color_primario;
+    
+    
     
 
     .logo-items {
         @include flex;
-        flex-grow: 1;
         width: 230px;
+        list-style: none;
     }
 
     .nav-items {
         
         @include flex;
-        flex-grow: 7;
         justify-content: space-between;
         align-items: center;
+        list-style: none;
     }
 
     ul {
 
         li a {
             margin: 25px;
-            padding: 15px 40px;
+            padding: 15px 30px;
             text-decoration: none;
             font-family: $font_letra;
             font-size: 12px;
@@ -92,19 +95,21 @@ nav {
     }
 
     .fa-bars{
+        color: $color_letra;
+        background:none;
+        border: none;
+        font-size: 30px;
+        padding: 0 20px;
         display: none;
     }
 
-}
-
-
-
-.logo {
-    font-family: 'Comforter Brush', cursive;
-    font-size: 40px;
-    font-weight: bold;
-    color: $color_letra;
-
+    .logo {
+        font-family: 'Comforter Brush', cursive;
+        font-size: 40px;
+        font-weight: bold;
+        color: $color_letra;
+    
+    }
 }
 
 .contenedores {
@@ -117,6 +122,7 @@ nav {
     @include tamano_contenedorhw(400px, auto);
     @include flex;
     margin-bottom: 30px;
+    padding-top: 130px;
 
     .principal_1 {
 
@@ -280,5 +286,79 @@ $joinNombre_color: (facebook, #3b5998), (linkedin, #0e76a8), (github, #333), (go
 
 }
 
-@import "media_queries.scss";
 
+
+// @import "media_queries.scss";
+@media (max-width: 768px) {
+    
+    // nav{
+    //     .fa-bars{
+    //         display: inline-block;
+    //     }
+    //     .nav-items{
+    //         display: none;
+    //     }
+    // }
+
+    nav {
+
+        background-color:#bce9ef;
+
+        
+        .logo-items {
+   
+            width: 230px;
+            padding-left: 35px;
+       
+        }
+    
+        .nav-items {
+            
+           
+            
+        }
+    
+        ul {
+    
+            li a {
+                margin: 25px;
+                padding: 0px;
+                text-decoration: none;
+                font-family: $font_letra;
+                font-size: 12px;
+                font-weight: 600;
+                color: $color_letra;
+    
+                &:hover {
+                    background-color: $color_3;
+                    color: #fff;
+                }
+            }
+        }
+    
+        .fa-bars{
+            color: #fff;
+            background:none;
+            border: none;
+            font-size: 30px;
+            padding: 0 20px;
+            display: none;
+        }
+    
+        .logo {
+            font-family: 'Comforter Brush', cursive;
+            font-size: 40px;
+            font-weight: bold;
+            color: $color_letra;
+        
+        }
+    }
+
+
+}
+
+@media (max-width: 576px) {
+    nav{
+        background-color: red;
+    }
+}
