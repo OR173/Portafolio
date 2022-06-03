@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
-@import "funciones.scss";
 @font-face {
     font-family: Sharp Sans;
     src: url('font/Sharp_Sans/Sharp_Sans.otf');
-}
-
-::-webkit-scrollbar {
-    width: 0px;
 }
 
 $color_primario: #d6eef1;
@@ -24,13 +19,6 @@ $font_letra: 'Sharp Sans', 'Arial', 'sans-serif';
     // border-color: #dd6e81;
 
 }
-
-// .box{
-//     border-width: 0.1px; 
-//     border-style: dashed; 
-//     border-color: #dd6e81;
-
-// }
 
 body {
     background-color: $color_primario;
@@ -51,7 +39,8 @@ header {
 }
 
 nav {
-    @include flex;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     height: 180px; 
     max-width: 992px;
@@ -59,18 +48,17 @@ nav {
     padding-top: 120px;
     background-color: $color_primario;
     
-    
-    
-
     .logo-items {
-        @include flex;
+        display: flex;
+        flex-direction: row;
         width: 230px;
         list-style: none;
     }
 
     .nav-items {
         
-        @include flex;
+        display: flex;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
         list-style: none;
@@ -104,7 +92,7 @@ nav {
     }
 
     .logo {
-        font-family: 'Comforter Brush', cursive;
+        font-family: 'Comforter Brush', 'Sharp Sans', cursive;
         font-size: 40px;
         font-weight: bold;
         color: $color_letra;
@@ -113,28 +101,39 @@ nav {
 }
 
 .contenedores {
-    @include tamano_contenedorhw(50px, 400px);
-    @include flex;
+    height: 450px;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
 }
 
-.cont_principal {
+.seccion_A {
 
-    @include tamano_contenedorhw(400px, auto);
-    @include flex;
+    height: 400px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
     margin-bottom: 30px;
     padding-top: 130px;
 
-    .principal_1 {
-
+    .seccion_A1 {
+        padding-top: 30px;
         justify-content: center;
+        flex-grow: 1;
 
         img {
-            @include tamano_contenedorhw(400px, 400px);
+            height: 270px;
+            width: 270px;
         }
 
     }
 
-    .pricp_2 {
+    .seccion_A2{
+        justify-content: center;
+        flex-grow: 1;
+    }
+
+    .seccion_A2-1 {
         width: 40vw;
 
         p,
@@ -144,7 +143,8 @@ nav {
 
         .social_media {
             ul {
-                @include flex;
+                display: flex;
+                flex-direction: row;
             }
 
             a {
@@ -245,24 +245,6 @@ $joinNombre_color: (facebook, #3b5998), (linkedin, #0e76a8), (github, #333), (go
     flex-direction: row;
 }
 
-// .triangulo-equilatero-bottom-left {
-//     width: 0; background-color:#43b7af;
-//     height: 0;
-//     border-right: 444px solid transparent;
-//     border-top: 200px solid  transparent;
-//     border-left: 683px solid #00998e;
-//     border-bottom: 200px solid #00998e;
-// }
-
-.cont_terceario {
-    background-color: $color_primario;
-    // width: 100vw;
-    height: 400px;
-    display: flex;
-    flex-direction: row;
-
-}
-
 .software-skill {
     display: flex;
     flex-direction: row;
@@ -290,3 +272,13 @@ $joinNombre_color: (facebook, #3b5998), (linkedin, #0e76a8), (github, #333), (go
 
 @import "media_queries.scss";
 
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.box{
+    border-width: 0.1px; 
+    border-style: dashed; 
+    border-color: #dd6e81;
+
+}
