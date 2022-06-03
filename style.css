@@ -338,44 +338,51 @@ nav .logo {
 
 @media (max-width: 768px) {
   nav {
-    background-color: #bce9ef;
+    background-color: #d6eef1;
+    width: 100vw;
   }
   nav .logo-items {
     width: 230px;
     padding-left: 35px;
   }
+  nav .nav-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 90px;
+    width: 100%;
+    background-color: #d6eef1;
+    height: calc(100%- 120px);
+    overflow-y: auto;
+  }
+  nav .menu_visible {
+    display: block;
+  }
+  nav .menu_visible:active {
+    display: block;
+  }
   nav ul li a {
-    margin: 25px;
-    padding: 0px;
-    text-decoration: none;
-    font-family: "Sharp Sans", "Arial", "sans-serif";
-    font-size: 12px;
-    font-weight: 600;
-    color: #17494d;
+    line-height: 50px;
+    margin: 0px;
   }
   nav ul li a:hover {
-    background-color: #06615a;
+    background: #06615a;
+    padding: 15px 100vw;
     color: #fff;
   }
   nav .fa-bars {
-    color: #fff;
-    background: none;
-    border: none;
-    font-size: 30px;
-    padding: 0 20px;
-    display: none;
-  }
-  nav .logo {
-    font-family: 'Comforter Brush', cursive;
-    font-size: 40px;
-    font-weight: bold;
-    color: #17494d;
+    display: block;
+    margin-left: auto;
+    cursor: pointer;
   }
 }
 
 @media (max-width: 576px) {
   nav {
-    background-color: red;
+    background-color: #d6eef1;
   }
 }
 /*# sourceMappingURL=style.css.map */

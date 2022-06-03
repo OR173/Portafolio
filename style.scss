@@ -95,7 +95,7 @@ nav {
     }
 
     .fa-bars{
-        color: $color_letra;
+        color: $color_secundario;
         background:none;
         border: none;
         font-size: 30px;
@@ -288,77 +288,5 @@ $joinNombre_color: (facebook, #3b5998), (linkedin, #0e76a8), (github, #333), (go
 
 
 
-// @import "media_queries.scss";
-@media (max-width: 768px) {
-    
-    // nav{
-    //     .fa-bars{
-    //         display: inline-block;
-    //     }
-    //     .nav-items{
-    //         display: none;
-    //     }
-    // }
+@import "media_queries.scss";
 
-    nav {
-
-        background-color:#bce9ef;
-
-        
-        .logo-items {
-   
-            width: 230px;
-            padding-left: 35px;
-       
-        }
-    
-        .nav-items {
-            
-           
-            
-        }
-    
-        ul {
-    
-            li a {
-                margin: 25px;
-                padding: 0px;
-                text-decoration: none;
-                font-family: $font_letra;
-                font-size: 12px;
-                font-weight: 600;
-                color: $color_letra;
-    
-                &:hover {
-                    background-color: $color_3;
-                    color: #fff;
-                }
-            }
-        }
-    
-        .fa-bars{
-            color: #fff;
-            background:none;
-            border: none;
-            font-size: 30px;
-            padding: 0 20px;
-            display: none;
-        }
-    
-        .logo {
-            font-family: 'Comforter Brush', cursive;
-            font-size: 40px;
-            font-weight: bold;
-            color: $color_letra;
-        
-        }
-    }
-
-
-}
-
-@media (max-width: 576px) {
-    nav{
-        background-color: red;
-    }
-}
