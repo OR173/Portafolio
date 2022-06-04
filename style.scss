@@ -109,11 +109,11 @@ nav {
 
 .seccion_A {
 
-    height: 400px;
+    height: 500px;
     width: auto;
     display: flex;
     flex-direction: row;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     padding-top: 130px;
 
     .seccion_A1 {
@@ -131,6 +131,7 @@ nav {
     .seccion_A2{
         justify-content: center;
         flex-grow: 1;
+        margin-right: 40px;
     }
 
     .seccion_A2-1 {
@@ -145,6 +146,8 @@ nav {
             ul {
                 display: flex;
                 flex-direction: row;
+                list-style: none;   
+                justify-content: center;
             }
 
             a {
@@ -211,8 +214,9 @@ $joinNombre_color: (facebook, #3b5998), (linkedin, #0e76a8), (github, #333), (go
     transition: 0.2s ease-in;
 }
 
-.btns_pricp {
+.seccion_A3 {
     display: flex;
+    justify-content: center;
 }
 
 .main_btn {
@@ -222,7 +226,7 @@ $joinNombre_color: (facebook, #3b5998), (linkedin, #0e76a8), (github, #333), (go
     color: #fff;
     font-weight: 700;
     padding: 13px 22px;
-    margin-right: 50px;
+    margin: 20px;
     text-transform: uppercase;
     border-radius: 6px;
     text-align: center;
@@ -237,15 +241,25 @@ $joinNombre_color: (facebook, #3b5998), (linkedin, #0e76a8), (github, #333), (go
     }
 }
 
-.cont_secundario {
+.seccion_B {
 
-    // width: auto;
+    width: auto;
     height: 400px;
     display: flex;
     flex-direction: row;
+    
+    .seccion_B1{
+        flex-grow: 1;
+    }
+
+    .seccion_B2{
+        flex-grow: 1;
+    }
+    
 }
 
 .software-skill {
+    overflow: hidden;
     display: flex;
     flex-direction: row;
     padding-left: 0;

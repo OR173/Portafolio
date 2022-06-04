@@ -133,7 +133,7 @@ nav .logo {
 }
 
 .seccion_A {
-  height: 400px;
+  height: 500px;
   width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -142,7 +142,7 @@ nav .logo {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   padding-top: 130px;
 }
 
@@ -168,6 +168,7 @@ nav .logo {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  margin-right: 40px;
 }
 
 .seccion_A .seccion_A2-1 {
@@ -187,6 +188,10 @@ nav .logo {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .seccion_A .seccion_A2-1 .social_media a {
@@ -265,10 +270,13 @@ nav .logo {
   transition: 0.2s ease-in;
 }
 
-.btns_pricp {
+.seccion_A3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .main_btn {
@@ -278,7 +286,7 @@ nav .logo {
   color: #fff;
   font-weight: 700;
   padding: 13px 22px;
-  margin-right: 50px;
+  margin: 20px;
   text-transform: uppercase;
   border-radius: 6px;
   text-align: center;
@@ -293,7 +301,8 @@ nav .logo {
   background-color: #06615a;
 }
 
-.cont_secundario {
+.seccion_B {
+  width: auto;
   height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -304,7 +313,20 @@ nav .logo {
           flex-direction: row;
 }
 
+.seccion_B .seccion_B1 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.seccion_B .seccion_B2 {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
 .software-skill {
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
