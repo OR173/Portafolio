@@ -4,10 +4,11 @@
     src: url('font/Sharp_Sans/Sharp_Sans.otf');
 }
 
-$color_primario: #d6eef1;
-$color_secundario: #17494d;
-$color_3: #06615a;
-$color_letra: #17494d;
+// $color_primario: #d6eef1;
+$color_primario: url("img/texture2.png");
+$color_secundario:#95781dcc;
+$color_3:  #95781dcc; 
+$color_letra: #fff; //FFD523 amarillo
 $font_letra: 'Sharp Sans', 'Arial', 'sans-serif';
 
 * {
@@ -21,7 +22,8 @@ $font_letra: 'Sharp Sans', 'Arial', 'sans-serif';
 }
 
 body {
-    background-color: $color_primario;
+    background-image: $color_primario;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,7 +53,8 @@ nav {
     .logo-items {
         display: flex;
         flex-direction: row;
-        width: 230px;
+        
+        width: auto;
         list-style: none;
     }
 
@@ -74,10 +77,16 @@ nav {
             font-size: 12px;
             font-weight: 600;
             color: $color_letra;
+            opacity: 0.7;
+            
 
             &:hover {
-                background-color: $color_3;
-                color: #fff;
+                
+                color: $color_letra;
+                border: 1px solid #fff;
+                opacity: 1;
+                // transition: all .3s;
+                border-radius: 5px ;
             }
         }
     }
@@ -93,8 +102,8 @@ nav {
 
     .logo {
         font-family: 'Comforter Brush', 'Sharp Sans', cursive;
-        font-size: 40px;
-        font-weight: bold;
+        font-size: 50px;
+        margin: 0px 5px;
         color: $color_letra;
     
     }
@@ -221,7 +230,7 @@ $joinNombre_color: (facebook, #3b5998), (linkedin, #0e76a8), (github, #333), (go
 
 .main_btn {
     font-family: $font_letra;
-    background-color: $color_secundario;
+    background-color: transparent;
     border: 1px solid $color_secundario;
     color: #fff;
     font-weight: 700;
@@ -290,9 +299,9 @@ $joinNombre_color: (facebook, #3b5998), (linkedin, #0e76a8), (github, #333), (go
     width: 0px;
 }
 
-.box{
-    border-width: 0.1px; 
-    border-style: dashed; 
-    border-color: #dd6e81;
+// .box{
+//     border-width: 0.1px; 
+//     border-style: dashed; 
+//     border-color: #dd6e81;
 
-}
+// }
