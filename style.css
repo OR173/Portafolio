@@ -358,6 +358,10 @@ nav .logo {
   color: #95781dcc;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+}
+
 @media (max-width: 768px) {
   nav {
     background-color: url("img/texture2.png");
@@ -379,11 +383,12 @@ nav .logo {
     background-color: url("img/texture2.png");
     height: calc(100%- 120px);
     overflow-y: auto;
+    display: none;
   }
-  nav .menu_visible {
+  nav .active {
     display: block;
   }
-  nav .menu_invisible {
+  nav .hidden {
     display: none;
   }
   nav ul li a {
@@ -406,9 +411,5 @@ nav .logo {
   nav {
     background-color: url("img/texture2.png");
   }
-}
-
-::-webkit-scrollbar {
-  width: 0px;
 }
 /*# sourceMappingURL=style.css.map */
