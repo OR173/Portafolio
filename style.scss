@@ -291,23 +291,7 @@ $joinNombre_color: (facebook, #3b5998), (linkedin, #0e76a8), (github, #333), (go
 
 }
 
-// .show{
-//     display: block;
-// }
-
-// .hidden{
-//     display: none;
-// }
-
-
 ::-webkit-scrollbar { width: 0px; }
-
-// .box{
-//     border-width: 0.1px; 
-//     border-style: dashed; 
-//     border-color: #dd6e81;
-
-// }
 
 // @import "media_queries.scss";
 @media (max-width: 768px) {
@@ -403,3 +387,12 @@ $joinNombre_color: (facebook, #3b5998), (linkedin, #0e76a8), (github, #333), (go
 // // XX-Large devices (larger desktops, 1400px and up)
 // @media (max-width: 1400px) { ... }
 
+.box{
+    border-width: 0.1px; 
+    border-style: dashed; 
+    border-color: #dd6e81;
+
+    background-color: white;
+    opacity: 10%;
+
+}

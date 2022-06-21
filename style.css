@@ -412,4 +412,12 @@ nav .logo {
     background-color: url("img/texture2.png");
   }
 }
+
+.box {
+  border-width: 0.1px;
+  border-style: dashed;
+  border-color: #dd6e81;
+  background-color: white;
+  opacity: 10%;
+}
 /*# sourceMappingURL=style.css.map */
