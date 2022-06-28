@@ -1,0 +1,138 @@
+.seccion_A {
+
+    height: 50rem;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    padding-top: 13rem;
+
+    .seccion_A1 {
+        padding-top: 3rem;
+        justify-content: center;
+        flex-grow: 1;
+
+        img {
+            height: 27rem;
+            width: 27rem;
+        }
+
+        @include telefono{
+            padding: 3rem;
+            padding-bottom: 0px;
+        }
+
+    }
+
+    .seccion_A2{
+        justify-content: center;
+        flex-grow: 1;
+        margin-right: 4rem;
+    }
+
+    .seccion_A2-1 {
+        width: 40vw;
+
+        p,
+        h1 {
+            font-family: $font_letra;
+        }
+
+        .social_media {
+            ul {
+                display: flex;
+                flex-direction: row;
+                list-style: none;   
+                justify-content: center;
+            }
+
+            a {
+                cursor: pointer;
+                text-decoration: underline;
+
+                &:hover {
+                    background-color: $color_3;
+
+                }
+            }
+
+        }
+    }
+
+    h1 {
+        color: $color_letra;
+        display: block;
+        font-size: 2em;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+        margin-inline-start: 0rem;
+        margin-inline-end: 0rem;
+        font-weight: bold;
+    }
+
+    p {
+        display: block;
+        text-align: justify;
+        color: $color_letra;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0rem;
+        margin-inline-end: 0rem;
+    }
+
+}
+
+$joinNombre_color: (facebook, #3b5998), (linkedin, #0e76a8), (github, #333), (google, #ea4335);
+@each $id, $color in $joinNombre_color {
+    .#{$id} {
+        background-color: #{$color};
+    }
+}
+
+.icon-button {
+    margin-bottom: 1rem;
+    color: #fff;
+    border-radius: 2.6rem;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.3rem;
+    height: 2.6rem;
+    line-height: 2.6rem;
+    margin: 0 0.5rem;
+    position: relative;
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 2.6rem;
+    margin-bottom: 1rem;
+    transition: 0.2s ease-in;
+}
+
+.seccion_A3 {
+    display: flex;
+    justify-content: center;
+}
+
+.main_btn {
+    font-family: $font_letra;
+    background-color: transparent;
+    border: 0.1rem solid $color_secundario;
+    color: #fff;
+    font-weight: 700;
+    padding: 1.3rem 2.2rem;
+    margin: 2rem;
+    text-transform: uppercase;
+    border-radius: 0.6rem;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin-top: 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color_3;
+    }
+}
