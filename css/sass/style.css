@@ -555,7 +555,7 @@ nav .logo_pequeno {
 }
 
 .contenedores {
-  height: 35rem;
+  height: 45rem;
   width: 40rem;
 }
 
@@ -578,15 +578,10 @@ nav .logo_pequeno {
 
 .seccion_A .seccion_A1 {
   background-color: gray;
-  display: -ms-grid;
-  display: grid;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-top: 3rem;
-  padding-bottom: 15rem;
 }
 
 .seccion_A .seccion_A1 img {
@@ -602,24 +597,38 @@ nav .logo_pequeno {
 }
 
 .seccion_A .seccion_A2 {
-  background-color: tomato;
-  width: 100%;
+  background-color: lightsalmon;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.seccion_A .seccion_A2 h1 {
-  margin-left: 3rem;
-}
-
-.seccion_A .seccion_A2 p {
-  padding: 1rem;
-}
-
 .seccion_A .seccion_A2-1 p,
 .seccion_A .seccion_A2-1 h1 {
   font-family: "Sharp Sans", "Arial", "sans-serif";
+}
+
+.seccion_A .seccion_A2-1 .social_media ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.seccion_A .seccion_A2-1 .social_media a {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.seccion_A .seccion_A2-1 .social_media a:hover {
+  background-color: #95781dcc;
 }
 
 .seccion_A h1 {
@@ -651,54 +660,25 @@ nav .logo_pequeno {
           margin-inline-end: 0rem;
 }
 
-.social_media ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  list-style: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.social_media a {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-.social_media a:hover {
-  background-color: #95781dcc;
-}
-
-.social_media ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  list-style: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.social_media a {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-.social_media a:hover {
-  background-color: #95781dcc;
-}
-
 .active_barss {
   margin-top: 30rem;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.grid .izq {
+  width: 4rem;
+  height: 4rem;
+}
+
+.grid .der {
+  width: 4rem;
+  height: 4rem;
 }
 
 .facebook {

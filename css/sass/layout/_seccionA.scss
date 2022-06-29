@@ -1,5 +1,5 @@
 .contenedores {
-    height: 45rem;
+    height: 35rem;
     width: 40rem;
 }
 
@@ -7,7 +7,6 @@
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
 
     margin-top: 20rem;
 
@@ -20,9 +19,13 @@
 
     .seccion_A1 {   background-color: gray;
 
-        justify-content: center;
-
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        
+        width: 100%;
         padding-top: 3rem;
+        padding-bottom: 15rem;
         
         img {
             height: 27rem;
@@ -36,9 +39,17 @@
 
     }
 
-    .seccion_A2{ background-color: lightsalmon;
-
+    .seccion_A2{ background-color: tomato;
+        width: 100%;
         justify-content: center;
+
+        h1{
+            margin-left: 3rem;
+        }
+
+        p{
+            padding: 1rem;
+        }
 
     }
 
@@ -49,26 +60,6 @@
             font-family: $font_letra;
         }
 
-        .social_media {
-            ul {
-                display: flex;
-                flex-direction: row;
-                list-style: none;   
-                justify-content: center;
-                
-            }
-
-            a {
-                cursor: pointer;
-                text-decoration: underline;
-
-                &:hover {
-                    background-color: $color_3;
-
-                }
-            }
-
-        }
     }
 
     h1 {
@@ -90,6 +81,51 @@
         margin-block-end: 1em;
         margin-inline-start: 0rem;
         margin-inline-end: 0rem;
+    }
+
+}
+
+.social_media {
+    
+    ul {
+        display: flex;
+        flex-direction: row;
+
+        list-style: none;   
+        justify-content: center;
+        
+    }
+
+    a {
+        cursor: pointer;
+        text-decoration: underline;
+
+        &:hover {
+            background-color: $color_3;
+
+        }
+    }
+
+}
+
+.social_media {
+    ul {
+        display: flex;
+        flex-direction: row;
+
+        list-style: none;   
+        justify-content: center;
+        
+    }
+
+    a {
+        cursor: pointer;
+        text-decoration: underline;
+
+        &:hover {
+            background-color: $color_3;
+
+        }
     }
 
 }
