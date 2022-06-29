@@ -16,7 +16,7 @@ nav {
         width: 100vw;
     }
     
-    .logo-items {
+        .logo-items {
 
         display: flex;
         flex-direction: row;
@@ -44,10 +44,10 @@ nav {
             left: 0;
             top: 90px;
             width: 100%;
+            height: auto;
             padding: 0rem;
-            background-color: transparent;
+            background-color: black;
 
-            height: calc(100% - 120px);
             overflow-y: auto;
             display:none;
 
@@ -55,7 +55,7 @@ nav {
         }
     }
 
-    .active{
+    .active_bars{
         display: block;
     }
     
