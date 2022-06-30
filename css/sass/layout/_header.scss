@@ -29,3 +29,27 @@ header {
     text-align: center;
 }
 
+h1{
+    display: block;
+    font-family: $font_letra;
+    font-weight: bold;
+    font-size: 3rem;
+    color: $color_letra;
+}
+
+h2{
+    display: block;
+    font-family: $font_letra;
+    font-weight: bold;
+    font-size: 2rem;
+    color: $color_letra;
+}
+
+p{
+    display: block;
+    text-align: justify;
+    color: $color_letra;
+    font-family: $font_letra;
+    padding: 1rem;
+}
+

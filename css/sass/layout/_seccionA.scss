@@ -3,7 +3,7 @@
     width: 40rem;
 }
 
-.seccion_A {    background-color: black;
+.saludo {    
 
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -17,7 +17,7 @@
         margin-top: 10rem;
     }
 
-    .seccion_A1 {   background-color: gray;
+    .saludo__img {   
 
         display: grid;
         justify-items: center;
@@ -39,76 +39,23 @@
 
     }
 
-    .seccion_A2{ background-color: tomato;
+    .saludo__text{ 
+        
         width: 100%;
         justify-content: center;
-
-        h1{
-            margin-left: 3rem;
-        }
-
-        p{
-            padding: 1rem;
-        }
-
-    }
-
-    .seccion_A2-1 {
-
-        p,
-        h1 {
-            font-family: $font_letra;
-        }
 
     }
 
     h1 {
-        color: $color_letra;
-        display: block;
-        font-size: 2em;
-        margin-block-start: 0.67em;
-        margin-block-end: 0.67em;
-        margin-inline-start: 0rem;
-        margin-inline-end: 0rem;
-        font-weight: bold;
+        margin-left: 3rem;
     }
 
-    p {
-        display: block;
-        text-align: justify;
-        color: $color_letra;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        margin-inline-start: 0rem;
-        margin-inline-end: 0rem;
-    }
+
 
 }
 
-.social_media {
+.saludo__socialMedia {
     
-    ul {
-        display: flex;
-        flex-direction: row;
-
-        list-style: none;   
-        justify-content: center;
-        
-    }
-
-    a {
-        cursor: pointer;
-        text-decoration: underline;
-
-        &:hover {
-            background-color: $color_3;
-
-        }
-    }
-
-}
-
-.social_media {
     ul {
         display: flex;
         flex-direction: row;
@@ -162,7 +109,7 @@ $joinNombre_color: (facebook, #3b5998), (linkedin, #0e76a8), (github, #333), (go
     transition: 0.2s ease-in;
 }
 
-.seccion_A3 {
+.saludo__btn {
     display: flex;
     justify-content: center;
 }
