@@ -1,9 +1,14 @@
+
+/*--------------------------------------------------------------
+# HABILIDADES
+--------------------------------------------------------------*/
+
 .skill {
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 
-    height: 40rem; 
+    height: 100%; 
     
     .skill__tecnologias{ background-color: tomato;
         
@@ -15,9 +20,7 @@
         }
     }
 
-    .skill_nose{ background-color: gray;
-        width: 100%;
-    }
+
     
 }
 
