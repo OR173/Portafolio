@@ -375,6 +375,11 @@ h2 {
   letter-spacing: 0.15rem;
 }
 
+h3 {
+  display: block;
+  color: #fff;
+}
+
 p {
   display: block;
   padding: 1rem;
@@ -393,8 +398,6 @@ nav {
   align-items: center;
   height: 18rem;
   max-width: 99.2rem;
-  position: fixed;
-  padding-top: 12rem;
   background-color: url("../img/texture2.png");
 }
 @media (max-width: 768px) {
@@ -520,14 +523,16 @@ nav .logo_pequeno {
 }
 
 .contenedores {
-  height: 35rem;
-  width: 40rem;
+  margin: 3rem 0rem;
+}
+.contenedores:hover {
+  box-shadow: 0px -1px 15px -5px rgba(226, 220, 220, 0.27);
 }
 
 .saludo {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 20rem;
+  width: 100%;
 }
 @media (max-width: 768px) {
   .saludo {
@@ -536,12 +541,11 @@ nav .logo_pequeno {
   }
 }
 .saludo .saludo__img {
-  display: grid;
-  justify-items: center;
-  align-items: center;
+  display: block;
+  text-align: center;
   width: 100%;
   padding-top: 3rem;
-  padding-bottom: 15rem;
+  padding-bottom: 3rem;
 }
 .saludo .saludo__img img {
   height: 27rem;
@@ -554,8 +558,11 @@ nav .logo_pequeno {
   }
 }
 .saludo .saludo__text {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  width: 100%;
+  padding-right: 1rem;
 }
 .saludo h1 {
   margin-left: 3rem;
@@ -600,7 +607,6 @@ nav .logo_pequeno {
   height: 100%;
 }
 .skill .skill__tecnologias {
-  background-color: tomato;
   width: 100%;
   padding: 2rem;
 }
@@ -624,9 +630,8 @@ nav .logo_pequeno {
 }
 
 .footer {
-  background-color: gray;
   width: 100%;
-  height: 40rem;
+  height: auto;
   margin: 1rem 0 0 0;
 }
 .footer h1 {
@@ -640,6 +645,28 @@ nav .logo_pequeno {
   color: #fff;
 }
 
+.footer__nav {
+  text-align: center;
+  margin-top: 3rem;
+}
+.footer__nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.footer__nav ul li {
+  margin: 1rem 4rem;
+  cursor: pointer;
+}
+.footer__nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer__socialMedia {
+  margin-top: 2rem;
+}
 .footer__socialMedia ul {
   display: flex;
   flex-direction: row;
@@ -655,6 +682,11 @@ nav .logo_pequeno {
 }
 .footer__socialMedia a:hover {
   background-color: rgba(149, 120, 29, 0.8);
+}
+
+.footer__copyright {
+  margin-top: 2rem;
+  text-align: center;
 }
 
 .facebook {
@@ -692,4 +724,27 @@ nav .logo_pequeno {
 
 .hide {
   display: none;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* ===================================================================
+   Section comment block
+   =================================================================== */
+/* Sub-section comment block
+   =================================================================== */
+/**
+ * Short description using Doxygen-style comment format
+ *
+ * The first sentence of the long description starts here and continues on this
+ * line for a while finally concluding here at the end of this paragraph.
+ *
+ * The long description is ideal for more detailed explanations and
+ * documentation. It can include example HTML, URLs, or any other information
+ * that is deemed necessary or useful.
+ *
+ * @tag This is a tag named 'tag'
+ *
+ * TODO: This is a todo statement that describes an atomic task to be completed
+ *   at a later date. It wraps after 80 characters and following lines are
+ *   indented by 2 spaces.
+ */
+/* Basic comment *//*# sourceMappingURL=style.css.map */

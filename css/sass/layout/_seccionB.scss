@@ -3,14 +3,14 @@
 # HABILIDADES
 --------------------------------------------------------------*/
 
-.skill {
+.skill { 
 
     display: grid;
     grid-template-columns: 1fr;
 
     height: 100%; 
     
-    .skill__tecnologias{ background-color: tomato;
+    .skill__tecnologias{ 
         
         width: 100%;
         padding: 2rem;

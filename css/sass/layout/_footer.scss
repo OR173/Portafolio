@@ -1,8 +1,8 @@
 
-.footer{   background-color: gray;
+.footer{   
     
     width: 100%;
-    height: 40rem;
+    height: auto;
 
     margin: 1rem 0 0 0; 
 
@@ -22,9 +22,36 @@
     }
 }
 
+.footer__nav{   
+
+    text-align: center;
+    margin-top: 3rem;
+    
+    ul{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        
+        li { 
+            margin: 1rem 4rem;
+            cursor: pointer;
+
+            a{
+                text-decoration: none;
+                color: $color_letra;
+            }
+        }
+    }
+
+
+}
+
 
 .footer__socialMedia {
-    
+
+    margin-top: 2rem;
+
     ul {    
 
         display: flex;
@@ -50,6 +77,14 @@
 
 }
 
+.footer__copyright{ 
+
+    margin-top: 2rem;
+
+    text-align: center;
+
+}
+
 
 @each $id, $color in $redes_sociales {
     .#{$id} {
@@ -61,7 +96,7 @@
 
     font-size: 1.8rem;
 
-    color: #fff;
+    color: $color_letra;
     margin: 1rem;
     padding: 0.8rem 1rem;
     border-radius: 50%;
@@ -71,8 +106,3 @@
     
 }
 
-::-webkit-scrollbar { width: 0rem; }
-
-.hide{
-    display:none;
-}

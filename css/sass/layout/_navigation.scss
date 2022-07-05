@@ -4,8 +4,6 @@ nav {
     align-items: center;
     height: 18rem; 
     max-width: 99.2rem;
-    position: fixed;   
-    padding-top: 12rem;
     background-color: $color_primario;
 
     @include tablet {
