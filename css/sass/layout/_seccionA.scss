@@ -28,12 +28,14 @@
 
         
         width: 100%;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
+        padding: 3rem;
+
         
         img {
-            height: 27rem;
-            width: 27rem;
+   
+            width: 32rem;
+            
+
         }
 
         @include telefono{
@@ -71,7 +73,7 @@
 }
 
 .main_btn {
-    font-family: $font_letra;
+    font-family: $letra_parrafos;
     background-color: transparent;
     border: 0.1rem solid $color_secundario;
     color: #fff;
