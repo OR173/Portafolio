@@ -81,6 +81,20 @@
     }
 }
 
+.icon-button {
+
+    font-size: 1.8rem;
+
+    color: $color_letra;
+    margin: 1rem;
+    padding: 0.8rem 1rem;
+    border-radius: 50%;
+
+    cursor: pointer;
+    user-select: none;
+    
+}
+
 .footer__copyright{ 
 
     h3{
@@ -99,17 +113,4 @@
     }
 }
 
-.icon-button {
-
-    font-size: 1.8rem;
-
-    color: $color_letra;
-    margin: 1rem;
-    padding: 0.8rem 1rem;
-    border-radius: 50%;
-
-    cursor: pointer;
-    user-select: none;
-    
-}
 

@@ -1,5 +1,5 @@
 
-nav {
+.nav_static{
     display: flex;
     align-items: center;
     height: 18rem; 
@@ -148,6 +148,46 @@ nav {
     }
 
     
+}
+
+.nav_float {
+    
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+
+    ul{
+        li{
+            position: relative;
+            white-space: nowrap;
+        }
+    }
+
+    .nav-button {   background-color: tomato;
+        
+        margin-bottom: 0.8rem;
+        padding: 1rem ;
+        border-radius: 2.5rem;
+
+        width: 50%;
+        height: 5.6rem;
+
+        font-size: 2.5rem;  
+        text-decoration: none;
+        text-align: center;
+
+        overflow: auto;
+
+        &:hover{
+            width: 100%;
+            overflow: hidden;
+        }
+    }
+
+ 
+    
+
+
 }
 
 
