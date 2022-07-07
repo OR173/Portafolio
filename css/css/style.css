@@ -402,14 +402,19 @@ p {
   max-width: 99.2rem;
   background-color: url("../img/texture2.png");
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .nav_static {
     width: 100vw;
   }
 }
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .nav_static {
     width: 100vw;
+  }
+}
+@media (min-width: 992px) {
+  .nav_static {
+    display: none;
   }
 }
 .nav_static .logo-items {
@@ -418,7 +423,7 @@ p {
   width: auto;
   list-style: none;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .nav_static .logo-items {
     width: 230px;
     padding-left: 35px;
@@ -431,7 +436,7 @@ p {
   align-items: center;
   list-style: none;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .nav_static .nav-items {
     flex-direction: column;
     position: fixed;
@@ -451,7 +456,7 @@ p {
 .nav_static ul {
   padding: 0rem;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .nav_static ul li:hover {
     background: rgba(149, 120, 29, 0.8);
     color: #fff;
@@ -472,7 +477,7 @@ p {
   color: #fff;
   opacity: 0.7;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .nav_static ul a {
     line-height: 50px;
     margin: 0px;
@@ -492,7 +497,7 @@ p {
   padding: 0 2rem;
   display: none;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .nav_static .fa-bars {
     display: block;
     margin-left: auto;
@@ -512,7 +517,7 @@ p {
 .nav_static .logo_pequeno {
   display: none;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .nav_static .logo_pequeno {
     color: #fff;
     margin-left: 30px;
@@ -524,15 +529,12 @@ p {
   }
 }
 
-.nav_float * {
-  margin: 0;
-  padding: 0;
-}
-
 .nav_float {
   display: flex;
   flex-direction: column;
   position: fixed;
+  left: 20%;
+  top: 30%;
 }
 
 .nav-button {
@@ -581,7 +583,7 @@ p {
   grid-template-columns: 1fr 1fr;
   width: 100%;
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .saludo {
     grid-template-columns: 1fr;
     margin-top: 10rem;
@@ -596,7 +598,7 @@ p {
 .saludo .saludo__img img {
   width: 32rem;
 }
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .saludo .saludo__img {
     padding: 3rem;
     padding-bottom: 0px;

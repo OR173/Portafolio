@@ -1,3 +1,4 @@
+//https://www.youtube.com/watch?v=CzgR0I3OJN4
 
 .nav_static{
     display: flex;
@@ -12,6 +13,10 @@
 
     @include telefono() {
         width: 100vw;
+    }
+
+    @media (min-width: 992px) {
+        display: none;
     }
     
         .logo-items {
@@ -149,16 +154,15 @@
 
     
 }
-.nav_float *{
-    margin: 0;
-    padding: 0;
-}
 
 .nav_float {
     
     display: flex;
     flex-direction: column;
     position: fixed;
+    left: 20%;
+    top: 30%;
+    
 }
 .nav-button {
     
