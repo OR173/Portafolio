@@ -262,3 +262,9 @@
 // |   |– _jquery-ui.sass    // jQuery UI
 // |
 // |– style/main.sass              // Archivo principal
+
+@media screen and (max-width: 1130px) {
+    .nav_float{
+        background-color: red;
+    }
+}
