@@ -1,7 +1,7 @@
 
 function Proyectos() {   return( 
 
-    <section class="proyecto">
+    <section className="proyecto contenedores">
     <h2>Proyectos </h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, culpa? Temporibus laboriosam odio
             ipsa ab eligendi</p>

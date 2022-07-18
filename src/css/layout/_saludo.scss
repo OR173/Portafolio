@@ -1,7 +1,4 @@
 
-.profile-image{
-    background-image: url("../img/fotoperfil2.png");
-}
 .saludo {   
     position: relative;
     display: grid;
@@ -74,4 +71,39 @@
     &:hover {
         background-color: $color_3;
     }
+}
+
+.saludo__text__nombre{
+    // background-color: tomato;
+    margin: 1rem 0;
+    padding: 1.5rem 0;
+    
+}
+
+.myNombre {
+    text-align: center;
+    font-family: 'Comforter Brush', 'Sharp Sans', cursive;
+    font-size: 5rem;
+    margin: 0 0.5rem;
+    color: $color_letra;
+    
+
+}
+
+//TABLET
+@media screen and (max-width: 768px) {
+    
+    .saludo{
+        background-color: rgb(70 49 49);
+    }
+    
+}
+
+//TELEFONO
+@media screen and (max-width: 576px) {
+
+    .saludo{
+        background-color: rgb(49 50 70)
+    }
+     
 }
