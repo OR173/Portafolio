@@ -1,0 +1,116 @@
+
+.footer{   
+    
+    width: 100%;
+    height: auto;
+
+    margin: 10rem 0 0 0; 
+
+    h1{     
+        
+        font-family: $myNombre;
+        font-weight: bold;
+        font-size: 3rem;
+
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+
+        margin: 1.5rem 0 0 0; 
+        color: $color_letra;
+
+    }
+}
+
+.footer__nav{   
+
+    text-align: center;
+    margin-top: 3rem;
+    
+    ul{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        
+        li { 
+            margin: 1rem 4rem;
+            cursor: pointer;
+
+            a{  
+                text-decoration: none;
+                color: $color_letra;
+                font-family: $letra_parrafos;   
+                font-size: 1.2rem;
+                font-weight: 600;
+                opacity: 0.7;
+            }
+        }
+    }
+
+
+}
+
+
+.footer__socialMedia {
+
+    margin-top: 2rem;
+
+    ul {    
+
+        display: flex;
+        flex-direction: row;
+        
+        list-style: none;   
+        justify-content: center;
+
+        li{
+            margin: 1rem;
+            
+            a {
+                text-decoration: underline;
+                cursor: pointer;
+        
+                &:hover {
+                    background-color: $color_3;
+        
+                }
+            }
+        }
+
+    }
+}
+
+.icon-button {
+
+    font-size: 1.8rem;
+
+    color: $color_letra;
+    margin: 1rem;
+    padding: 0.8rem 1rem;
+    border-radius: 50%;
+
+    cursor: pointer;
+    user-select: none;
+    
+}
+
+.footer__copyright{ 
+
+    h3{
+        margin: 3rem 0;
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-align: center;
+
+    }
+}
+
+
+@each $id, $color in $redes_sociales {
+    .#{$id} {
+        background-color: #{$color};
+    }
+}
+
+

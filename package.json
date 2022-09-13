@@ -1,5 +1,8 @@
 {
+<<<<<<< HEAD
   "homepage": "https://or173.github.io/portafolio",
+=======
+>>>>>>> 1d263b5 (regresando a react)
   "name": "portafolioreact",
   "private": true,
   "version": "0.0.0",
@@ -7,9 +10,13 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+<<<<<<< HEAD
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
+=======
+    "preview": "vite preview"
+>>>>>>> 1d263b5 (regresando a react)
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -23,4 +30,8 @@
     "sass": "^1.53.0",
     "vite": "^3.0.0"
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 1d263b5 (regresando a react)
