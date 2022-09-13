@@ -1,0 +1,156 @@
+//https://www.youtube.com/watch?v=CzgR0I3OJN4
+
+.nav_static{
+    display: flex;
+    align-items: center;
+    height: 18rem; 
+    max-width: 99.2rem;
+    background-image: $color_primario;
+
+        .logo-items {
+
+        display: flex;
+        flex-direction: row;
+        
+        width: auto;
+        list-style: none;
+
+    }
+
+    .nav-items {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+
+    }
+
+    .active_bars{
+        display: block;
+    }
+    
+
+    ul {
+        padding: 0rem;
+        
+        a {
+            margin: 2.5rem;
+            padding: 1.5rem 3rem;
+            text-decoration: none;
+            font-family: $letra_parrafos;   
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: $color_letra;
+            opacity: 0.7;
+            
+            &:hover {
+                
+                color: $color_letra;
+                border: 0.1rem solid $color_letra;
+                opacity: 1;
+                border-radius: 0.5rem ;
+            }
+        }
+    }
+
+    .fa-bars{
+        color: $color_letra;
+        background:none;
+        border: none;
+        font-size: 3rem;
+        padding: 0 2rem;
+        display: none;
+
+    }
+
+    .logo {
+        font-family: 'Comforter Brush', 'Sharp Sans', cursive;
+        font-size: 5rem;
+        margin: 0 0.5rem;
+        color: $color_letra;
+        display: block;
+
+    }
+
+    .borrar_logo{
+        display: none;
+    }
+
+    .logo_pequeno{
+
+        display:none;
+
+    }
+
+    
+}
+
+.nav_float {
+    
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 20%;
+    top: 30%;
+    
+}
+.nav-button {
+    
+    border-radius: 2.5rem;
+    border: 1px solid #21c3e5;
+    
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 1rem;
+    
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+    
+    overflow: auto;
+    
+    ul{
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+
+    i{
+        margin: 1.4rem;
+        color:#21c3e5;
+    }
+    
+    &:hover {
+        
+        width: 100%;
+        background-color: #21c3e5;
+        i{
+            color: black;
+
+        }
+        
+        
+    }
+    span{   
+        
+        margin: 0 1.5rem 0 0;
+        font-family: $letra_titulos;
+        font-size: 1.8rem;
+        color:black;
+    }
+}
+
+
+
+//TABLET
+@media screen and (max-width: 768px) {
+    
+}
+
+//TELEFONO
+@media screen and (max-width: 576px) {
+     
+}
+

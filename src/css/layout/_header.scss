@@ -1,0 +1,63 @@
+html {
+    
+    box-sizing: border-box;
+    font-size: 63.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+ 
+body {
+
+    background-image: $color_primario;
+    font-size: 1.6rem; // 1rem = 10px
+    max-width: 99.2rem;
+    margin: 0 auto; 
+}
+
+header {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+h2{
+
+    display: block;
+    color: $color_letra;
+
+    font-family: $letra_titulos;
+    font-size: 2.5rem;
+
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+}
+
+h3{
+    display: block;
+    color: $color_letra;
+    font-family: $letra_parrafos;
+}
+
+p{
+    
+    display: block;
+    padding: 1rem;
+    color: $color_letra;
+
+    font-family: $letra_parrafos;
+    text-align: justify;
+    line-height: 2.5rem;
+}
+
+.box_general {
+    
+    max-width: 99.2rem;
+    text-align: center;
+ }
+

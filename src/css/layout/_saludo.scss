@@ -1,0 +1,77 @@
+
+.profile-image{
+    background-image: url("../img/fotoperfil2.png");
+}
+.saludo {   
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+
+    .saludo__img {   
+
+        display: block;
+        text-align: center;
+
+        
+        width: 100%;
+        padding: 3rem;
+
+        
+        img {
+   
+            width: 32rem;
+            
+
+        }
+
+    }
+
+    .saludo__text{ 
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        width: 100%;
+        padding-right: 1rem;
+
+
+    }
+
+    h1 {
+        margin-left: 3rem;
+    }
+
+}
+
+.active_barss{
+    margin-top: 30rem;
+}
+
+.saludo__btn {
+    display: flex;
+    justify-content: center;
+}
+
+.main_btn {
+    font-family: $letra_parrafos;
+    background-color: transparent;
+    border: 0.1rem solid $color_secundario;
+    color: #fff;
+    font-weight: 700;
+    padding: 1.3rem 2.2rem;
+    margin: 2rem;
+    text-transform: uppercase;
+    border-radius: 0.6rem;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin-top: 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $color_3;
+    }
+}
